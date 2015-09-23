@@ -46,4 +46,4 @@ names(new_my_data)<-new_feature_names
 mydata_grouped<-group_by(new_my_data,subject_id,activity)
 mydata_2<-summarize_each(mydata_grouped,funs(mean))
 mydata_2<-arrange(mydata_2,subject_id,activity_id)
-write.table(mydata_2,file="clean_data.txt",row.names = FALSE) # save table
+write.table(mydata_2,file="tidy_data.txt",row.names = FALSE) # save table

@@ -86,5 +86,5 @@ head(mydata_2[,c(1,2,4:ncol(mydata_2))])
 
 Save to text file  
 ```{r}
-write.table(mydata_2,file="clean_data.txt",row.names = FALSE) # save table
+write.table(mydata_2,file="tidy_data.txt",row.names = FALSE) # save table
 ```
